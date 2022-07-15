@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://js.pusher.com/7.1/pusher.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <title>Pusher Poll</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>OS vote
+        </h1>
+        <p>Vote for your favorite OS to develop on</p>
+        <form action="" id="vote-form">
+            <p>
+                <input type="radio" name="os" id="windows">
+                <label for="windows">Windows</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="windows">
+                <label for="macos">MacOS</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="windows">
+                <label for="linux">Linux Distro</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="windows">
+                <label for="other">Others</label>
+            </p>
+            <input type="submit" value="Vote" class="btn btn-light btn-outline-dark">
+        </form>
+        <br>
+        <br>
+        <div id="chartContainer" style = "height: 300px;width: 100%"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/5.1.1/pusher.min.js" integrity="sha512-J4pO8k/yg5xOnwCjgCwcHwnO/9+kRUB0E+FRI2qxg1LpfCmO7Wqml1xElO4TP0Cb2l9Z1583rGQMkAWktta0pg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
